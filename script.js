@@ -6,75 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Sua escola anunciou que a partir deste trimestre os alunos poderão usar assistentes de IA para tirar dúvidas e organizar rotinas de estudos. Como você reagiu à novidade?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                texto: "Achei incrível! Vai facilitar muito o dia a dia e organizar minha rotina.",
+                afirmacao: "Você recebeu a chegada da IA nos estudos com entusiasmo e foco na produtividade."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
+                texto: "Fiquei receoso. Tenho medo de a gente ficar dependente da tecnologia para pensar.",
+                afirmacao: "Você manteve uma postura cautelosa, priorizando a autonomia do pensamento humano."
             }           
-            
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
+        enunciado: "Na aula de Língua Portuguesa, o professor pediu uma análise crítica sobre um livro clássico. Como você decide utilizar a IA nesse projeto?",
         alternativas: [
             {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
+                texto: "Uso a IA para resumir a obra e me ajudar a estruturar os tópicos principais da minha análise.",
+                afirmacao: "Utilizou a inteligência artificial como um ponto de partida para organizar suas ideias."
             },
             {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                texto: "Prefiro ler o livro por conta própria e discutir o tema direto com meus colegas de turma.",
+                afirmacao: "Decidiu focar na leitura direta e no debate humano para construir suas conclusões."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Em uma feira de ciências, surge um debate sobre o uso de IA na medicina e diagnóstico de doenças. Qual opinião você defende no painel?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "A IA é essencial porque processa dados mais rápido que qualquer humano e pode salvar vidas.",
+                afirmacao: "Defendeu o uso intensivo da tecnologia para acelerar descobertas e salvar vidas."
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                texto: "A IA ajuda, mas a palavra final e o cuidado humano devem continuar sempre com os médicos.",
+                afirmacao: "Enfatizou a importância da empatia e da responsabilidade humana acima dos algoritmos."
             }
-            
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você precisa criar a capa de uma apresentação sobre o meio ambiente. Qual recurso decide usar para fazer a arte?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                texto: "Geradores de imagens por IA a partir de descrições detalhadas em texto.",
+                afirmacao: "Apostou em ferramentas gerativas para criar visuais inovadores rapidamente."
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "Fotografias autorais e ilustrações feitas por você em editores tradicionais.",
+                afirmacao: "Valorizou o trabalho autoral e a expressão artística feita pelas próprias mãos."
             }
-            
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Chega o momento de preparar a conclusão do projeto final da escola. Um colega sugere pedir para o chat escrever o texto inteiro para economizar tempo. O que você responde?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Podemos usar o texto como rascunho, mas precisamos reescrever com nossas próprias palavras e conclusões.",
+                afirmacao: "Demonstrou senso crítico ao entender a IA como apoio, mantendo a autenticidade do grupo."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Acho válido usar o texto gerado, desde que a gente revise os fatos para não entregar informações erradas.",
+                afirmacao: "Confiou na capacidade de síntese da maquina, focando na checagem e validação dos dados."
             }
-            
-            
         ]
-    },
+    }
 ];
 
 let atual = 0; 
@@ -109,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Sua jornada com a tecnologia...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
