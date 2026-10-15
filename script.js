@@ -6,10 +6,11 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
   {
-        enunciado: "Qual destas combinações é originária da culinária brasileira?",
-        alternativas: [
-            {
-                texto: "Feijoada completa com acompanhamentos",
+    enunciado: 
+    "Qual destas combinações é originária da culinária brasileira?",
+    alternativas: [
+        {
+            texto: "Feijoada completa com acompanhamentos",
                 afirmacao:[
                     "Você conhece bem os pratos tradicionais do Brasil.",
                     "A feijoada é um dos ícones mais famosos da nossa gastronomia."
@@ -20,9 +21,9 @@ const perguntas = [
                 afirmacao:[
                     "Você preferiu destacar um prato de origem japonesa.",
                     "Embora muito popular no país, não é uma invenção brasileira."
-                ]
-            }           
-        ]
+                ],
+            },       
+        ],
     },
     
 ];
